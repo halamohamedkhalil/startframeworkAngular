@@ -8,7 +8,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {path:'',redirectTo:'home', pathMatch:'full'},
+  {path:'',component:HomeComponent,title:"Home"},
   {path:'home', component:HomeComponent,title:"Home"},
   {path:'about', component:AboutComponent,title:"About"},
   {path:'contact',component:ContactComponent,title:"Contact"},
