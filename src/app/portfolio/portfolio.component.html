@@ -1,0 +1,60 @@
+<div class="portfolio mb-4">
+    <div class="pt-4">
+        <app-star [title]="title" [light]="light">  </app-star>
+
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="rounded-3 over-hidden position-relative" (click)="show('./assets/images/poert1.png')">
+                        <img class="w-100 rounded-3" src="./assets/images/poert1.png" alt="1">
+                        <div class="layer position-absolute start-0 w-100 h-100 top-0 d-flex justify-content-center align-items-center">
+                            <i class="text-white fa-solid fa-plus fa-6x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="rounded-3 over-hidden position-relative" (click)="show('./assets/images/port2.png')">
+                        <img class="w-100 rounded-3" src="./assets/images/port2.png" alt="1">
+                        <div class="layer position-absolute start-0 w-100 h-100 top-0 d-flex justify-content-center align-items-center">
+                            <i class="text-white fa-solid fa-plus fa-6x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="rounded-3 over-hidden position-relative" (click)="show('./assets/images/port3.png')">
+                        <img class="w-100 rounded-3" src="./assets/images/port3.png" alt="1">
+                        <div class="layer position-absolute start-0 w-100 h-100 top-0 d-flex justify-content-center align-items-center">
+                            <i class="text-white fa-solid fa-plus fa-6x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="rounded-3 over-hidden position-relative" (click)="show('./assets/images/poert1.png')">
+                        <img class="w-100 rounded-3" src="./assets/images/poert1.png" alt="1">
+                        <div class="layer position-absolute start-0 w-100 h-100 top-0 d-flex justify-content-center align-items-center">
+                            <i class="text-white fa-solid fa-plus fa-6x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="rounded-3 over-hidden position-relative" (click)="show('./assets/images/port2.png')">
+                        <img class="w-100 rounded-3" src="./assets/images/port2.png" alt="1">
+                        <div class="layer position-absolute start-0 w-100 h-100 top-0 d-flex justify-content-center align-items-center">
+                            <i class="text-white fa-solid fa-plus fa-6x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="rounded-3 over-hidden position-relative" (click)="show('./assets/images/port3.png')">
+                        <img class="w-100 rounded-3" src="./assets/images/port3.png" alt="1">
+                        <div class="layer position-absolute start-0 w-100 h-100 top-0 d-flex justify-content-center align-items-center">
+                            <i class="text-white fa-solid fa-plus fa-6x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <app-popup [src]="activeImg" [active]="showPopUp" (deAciveEvent)="deShow()"></app-popup>
+    </div>
+</div>
+

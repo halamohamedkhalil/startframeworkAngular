@@ -1,0 +1,18 @@
+<section class="mb-4">
+    <div class="container pt-3">
+        <app-star [title]="title" [light]="light">  
+        </app-star>
+        <form action="" class="w-50 p-3 mx-auto mt-5" >
+            <Label for="userName" class="position-relative" [class] =" contactData.userName.length > 0 ? 'top-0' : 'top' ">userName :</Label>
+            <input id="userName" type="text" name="userName" placeholder="userName" class="form-control border-0 border-bottom py-3 position-relative"  (keyup)="onKeyUserName($event)" >
+            <Label for="userAge" class="position-relative" [class] =" contactData.userAge.length > 0 ? 'top-0' : 'top' ">userAge :</Label>
+            <input id="userAge" type="text" name="userAge" placeholder="userAge" class="form-control border-0 border-bottom py-3 position-relative" (keyup)="onKeyUserAge($event)">
+            <Label for="userEmail" class="position-relative" [class] =" contactData.userEmail.length > 0 ? 'top-0' : 'top' ">userEmail :</Label>
+            <input id="userEmail" type="email" name="userEmail" placeholder="userEmail" class="form-control border-0 border-bottom py-3 position-relative" (keyup)="onKeyUserEmail($event)">
+            <Label for="userPassword" class="position-relative" [class] =" contactData.userPassword.length > 0 ? 'top-0' : 'top' ">userPassword</Label>
+            <input id="userPassword" type="password" name="userPassword" placeholder="userPassword" class="form-control border-0 border-bottom py-3 position-relative" (keyup)="onKeyUserPassword($event)">
+            <button class="btn mt-4 text-white">send Message</button>
+        </form>
+
+    </div>
+</section>
